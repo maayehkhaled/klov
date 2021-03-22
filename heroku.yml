@@ -1,0 +1,6 @@
+build:
+  docker:
+    web:$ curl https://raw.githubusercontent.com/extent-framework/klov-server/master/docker-compose.yml -o docker-compose.yml
+
+run:
+  web: bundle exec puma -C config/puma.rb
